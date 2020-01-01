@@ -1,21 +1,20 @@
-.Search-Input {
-    width: 650px;
-    height: 50px;
-    background-color: #fff;
-  }
+@font-face {
+  font-family:"Monaco";
+  src:url("font/Monaco.ttf");
+}
 
-  button {
-    width: 100px;
-    height: 50px;
-    border-color:#ac53f2;
-    border-radius: 5px;
-    background-color: #ac53f2;
-  }
+@font-face {
+  font-family:"Raleway";
+  src:url("font/Raleway-ExtraLightItalic.ttf");
+}
 
-  .Github-Search {
-    width: 415px;
-    height: 81px;
-    font-family: Monaco;
+
+html,body, #root {
+  height: 100%;
+}
+
+.Github-Search-Title {
+    font-family: "Monaco";
     font-size: 60px;
     font-weight: normal;
     font-stretch: normal;
@@ -24,9 +23,43 @@
     letter-spacing: normal;
     color: #000000;
   }
-  
-  .Github-Search .text-style-1 {
-    font-family: Raleway;
+ 
+
+.Github-Search-Title .text-style-1 {
+    font-family: "Raleway";
     font-weight: 200;
-    font-style: italic;
+    font-style:italic;
+
   }
+
+.Search-Input {
+    width: 660px !important;
+    height: 50px !important;
+    border-radius:0px;
+    background-color: #fff;
+  }
+
+
+  .button-search {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #ac53f2;
+    border-radius: 2px;
+    background-color: #ac53f2;
+  }
+
+  .Search-Icon {
+    width: 30px;
+    height: 30.1px;
+    box-shadow: 0 0 4px black;
+    background-color: #fff;
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    .Search-Input {
+      width: 60% !important;
+    }
+
+  }
+

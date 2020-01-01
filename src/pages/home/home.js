@@ -14,14 +14,23 @@ export default class Home extends Component {
 
         return (
 
-            <main>
-                <div className="Github-Search">
-                    <h1>Github <span className="text-style-1">Search</span></h1>
+            <main class="container d-flex h-100">
+
+                <div class="row justify-content-center align-self-center">
+
+                    <seciton class="row">
+                        <div class="col-md-12 text-center">
+                            <h1 class="Github-Search-Title">Github<span class="text-style-1"> Search</span></h1>
+                        </div>
+                    </seciton>
+
+                    <form onSubmit={this.serachUser}>
+                        <div class="row d-flex justify-content-center">
+                            <input type="text" className="Search-Input" ref={(input => (this.login = input))} required />
+                            <button type="submit" class="button-search"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
                 </div>
-                <form onSubmit={this.serachUser}>
-                    <input type="text" className="Search-Input" ref={(input => (this.login = input))} required />
-                    <button type="submit">Pesquisar</button>
-                </form>
             </main>
 
         );

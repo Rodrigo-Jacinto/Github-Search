@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { Route, Router, browserHistory } from 'react-router';
-import "./reset.css";
+
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
