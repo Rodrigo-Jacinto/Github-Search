@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import api from '../../services/api';
 import Profile from '../../components/profile/profile.js';
+import searchIcon from './img/search-Icon.svg';
+import { Link } from 'react-router';
 import "./result-style.css";
 
 
@@ -55,36 +57,40 @@ export default class Result extends Component {
             return <Profile user={this.state.userGit} repos={this.state.repoGit} />
         }
         else {
-            return <div>Nada encontrado</div>
-
+            return (
+                <section className="row mt-5">
+                    <div className="col-md-12 text-center">
+                        <h1 className="not-found-message">User not found :(</h1>
+                    </div>
+                </section>
+            )
         }
     }
 
     render() {
 
         return (
-            <main className="contaier m-5">
+            <main className="container m-5">
 
                 <seciton class="row">
-                    <div class="col-md-4 col-sm-12 text-center">
-                        <h1 class="Github-Search-Title Github-Search-Title2">Github<span class="text-style-1"> Search</span></h1>
+                    <div class="col-md-4 col-sm-12">
+                        <Link to="/" className="link-home"> <h1 class="Github-Search-Title Github-Search-Title2">Github<span class="text-style-1"> Search</span></h1></Link>
                     </div>
 
                     <div className="col-md-8 col-sm-12">
                         <form onSubmit={this.search}>
-                            <input type="text" className="Search-Input" ref={(input => (this.user = input))} required />
-                            <button type="submit" className="button-search">Pesquisar</button>
+                            <div class="row d-flex justify-content-center">
+                                <input type="text" className="Search-Input" ref={(input => (this.user = input))} required />
+                                <button type="submit" class="button-search"><img src={searchIcon} /></button>
+                            </div>
                         </form>
                     </div>
 
                 </seciton>
 
-                <div className="mt-5">
-
-                    {
-                        this.loadUser()
-                    }
-                </div>
+                {
+                    this.loadUser()
+                }
 
             </main>
 

@@ -1,6 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 html,body, #root {
   height: 100%;
 }
+
+
 
 .Github-Search-Title {
     font-family: "Monaco";
@@ -22,12 +28,20 @@ html,body, #root {
   }
 
 .Search-Input {
-    width: 660px !important;
-    height: 50px !important;
+    width: 660px;
+    height: 50px;
+    padding-top: 13px;
+    padding-left: 17px;
     border-radius:0px;
-    background-color: #fff;
-  }
-
+    font-family: "Raleway-Light";
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #5c5c5c;
+}
 
   .button-search {
     width: 100px;

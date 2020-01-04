@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 import './home-style.css';
+import searchIcon from './img/search-Icon.svg';
 
 export default class Home extends Component {
 
@@ -27,7 +28,7 @@ export default class Home extends Component {
                     <form onSubmit={this.searchUser}>
                         <div class="row d-flex justify-content-center">
                             <input type="text" className="Search-Input" ref={(input => (this.user = input))} required />
-                            <button type="submit" class="button-search"><i class="fas fa-search"></i></button>
+                            <button type="submit" class="button-search"><img src={searchIcon} /></button>
                         </div>
                     </form>
                 </div>

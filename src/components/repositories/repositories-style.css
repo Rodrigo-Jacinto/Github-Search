@@ -34,4 +34,9 @@
     letter-spacing: normal;
     color: #5c5c5c;
     display: block;
+    margin-top: 10px;
+  }
+
+  .star-count img {
+    margin-right: 9px;    
   }
