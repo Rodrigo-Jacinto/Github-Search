@@ -15,20 +15,20 @@ export default class Home extends Component {
 
         return (
 
-            <main class="container d-flex h-100">
+            <main className="container d-flex h-100">
 
-                <div class="row justify-content-center align-self-center">
+                <div className="row justify-content-center align-self-center">
 
-                    <seciton class="row">
-                        <div class="col-md-12 col-sm-12 text-center">
-                            <h1 class="Github-Search-Title">Github<span class="text-style-1"> Search</span></h1>
+                    <seciton className="row">
+                        <div className="col-md-12 col-sm-12 text-center">
+                            <h1 className="Github-Search-Title">Github<span className="text-style-1"> Search</span></h1>
                         </div>
                     </seciton>
 
                     <form onSubmit={this.searchUser}>
-                        <div class="row d-flex justify-content-center">
+                        <div className="row d-flex justify-content-center">
                             <input type="text" className="Search-Input" ref={(input => (this.user = input))} required />
-                            <button type="submit" class="button-search"><img src={searchIcon} /></button>
+                            <button type="submit" className="button-search"><img src={searchIcon} /></button>
                         </div>
                     </form>
                 </div>

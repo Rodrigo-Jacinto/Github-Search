@@ -87,16 +87,16 @@ export default class Result extends Component {
         return (
             <main className="container m-5">
 
-                <seciton class="row">
-                    <div class="col-md-4 col-sm-12">
-                        <Link to="/" className="link-home"> <h1 class="Github-Search-Title Github-Search-Title2">Github<span class="text-style-1"> Search</span></h1></Link>
+                <seciton className="row">
+                    <div className="col-md-4 col-sm-12">
+                        <Link to="/" className="link-home"> <h1 className="Github-Search-Title Github-Search-Title2">Github<span className="text-style-1"> Search</span></h1></Link>
                     </div>
 
                     <div className="col-md-8 col-sm-12">
                         <form onSubmit={this.search}>
-                            <div class="row d-flex justify-content-center">
+                            <div className="row d-flex justify-content-center">
                                 <input type="text" className="Search-Input" ref={(input => (this.user = input))} required />
-                                <button type="submit" class="button-search"><img src={searchIcon} /></button>
+                                <button type="submit" className="button-search"><img src={searchIcon} /></button>
                             </div>
                         </form>
                     </div>

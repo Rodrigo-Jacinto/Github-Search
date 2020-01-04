@@ -16,7 +16,7 @@ export default class Repositorio extends Component {
         return (
             repositories.map(repos =>
                 (
-                    <div class="mb-5">
+                    <div className="mb-5">
                         <h1 className="repo-name">{repos.name}</h1>
                         <span className="repo-description">{repos.description}</span>
                         <span className="star-count">

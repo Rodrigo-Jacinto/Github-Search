@@ -15,13 +15,13 @@ export default class Profile extends Component {
 
         return (
             <section className="row mt-5">
-                <div class="col-md-4 col-sm-12">
+                <div className="col-md-4 col-sm-12">
 
                     <figure>
-                        <img src={userGit.avatar_url} class="user-avatar mb-3" />
+                        <img src={userGit.avatar_url} className="user-avatar mb-3" />
                         <figcaption>
-                            <span class="user-name">{userGit.name}</span>
-                            <span class="user-login"><a href={userGit.html_url} target="_blank">{userGit.login}</a></span>
+                            <span className="user-name">{userGit.name}</span>
+                            <span className="user-login"><a href={userGit.html_url} target="_blank">{userGit.login}</a></span>
                         </figcaption>
                     </figure>
 
