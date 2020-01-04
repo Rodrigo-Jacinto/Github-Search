@@ -10,7 +10,7 @@ export default class Result extends Component {
 
     state =
         {
-            userGit: [],
+            userGit: null,
             repoGit: []
         }
 
@@ -54,9 +54,22 @@ export default class Result extends Component {
 
     loadUser = () => {
 
-        if (this.state.userGit.length > 0) {
+        let { userGit } = this.state;
+        let { repoGit } = this.state;
 
-            return <Profile user={this.state.userGit} repos={this.state.repoGit} />
+        if (!userGit) {
+            return (
+                <section className="row mt-5">
+                    <div className="col-md-12 text-center">
+                        <h1 className="loading-message">Loanding...</h1>
+                    </div>
+                </section>
+            )
+
+        }
+        else if (Array.isArray(userGit) && userGit.length > 0) {
+
+            return <Profile user={userGit} repos={repoGit} />
         }
         else {
             return (

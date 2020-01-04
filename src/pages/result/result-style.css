@@ -10,6 +10,18 @@
   color: #ac53f2;
 }
 
+.loading-message {
+  font-family: "Raleway-Regular";
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #5c5c5c;
+}
+
+
 
 .Github-Search-Title2 {
     font-size: 40px; 
