@@ -40,3 +40,11 @@
   .star-count img {
     margin-right: 9px;    
   }
+
+
+  @media only screen and (max-width: 767px) {
+    .repo-name {
+      font-size: 25px;
+    }
+
+  }

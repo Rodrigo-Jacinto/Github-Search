@@ -15,7 +15,7 @@ export default class Profile extends Component {
 
         return (
             <section className="row mt-5">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12">
 
                     <figure>
                         <img src={userGit.avatar_url} class="user-avatar mb-3" />
@@ -30,21 +30,18 @@ export default class Profile extends Component {
                     </blockquote>
 
                     <ul className="properties-user mt-2">
-                        <li><img src={emailIcon}/>{userGit.email}</li>
-                        <li><img src={followersIcon}/>{userGit.followers}</li>
-                        <li><img src={followingIcon}/>{userGit.following}</li>
+                        <li><img src={emailIcon} />{userGit.email}</li>
+                        <li><img src={followersIcon} />{userGit.followers}</li>
+                        <li><img src={followingIcon} />{userGit.following}</li>
                     </ul>
 
                 </div>
 
-                <div class="col-sm-8">
+                <div className="col-md-8 col-sm-12">
                     <Repositories repos={repositories} />
                 </div>
+
             </section>
-
-
-
-
         )
 
     }
