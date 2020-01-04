@@ -1,14 +1,3 @@
-@font-face {
-  font-family:"Monaco";
-  src:url("font/Monaco.ttf");
-}
-
-@font-face {
-  font-family:"Raleway";
-  src:url("font/Raleway-ExtraLightItalic.ttf");
-}
-
-
 html,body, #root {
   height: 100%;
 }

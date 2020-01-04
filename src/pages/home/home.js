@@ -7,7 +7,7 @@ export default class Home extends Component {
 
     searchUser = (event) => {
         event.preventDefault();
-        browserHistory.push(`/result/${this.login.value}`);
+        browserHistory.push(`/result/${this.user.value}`);
     }
 
     render() {
@@ -19,14 +19,14 @@ export default class Home extends Component {
                 <div class="row justify-content-center align-self-center">
 
                     <seciton class="row">
-                        <div class="col-md-12 text-center">
+                        <div class="col-md-12 col-sm-12 text-center">
                             <h1 class="Github-Search-Title">Github<span class="text-style-1"> Search</span></h1>
                         </div>
                     </seciton>
 
-                    <form onSubmit={this.serachUser}>
+                    <form onSubmit={this.searchUser}>
                         <div class="row d-flex justify-content-center">
-                            <input type="text" className="Search-Input" ref={(input => (this.login = input))} required />
+                            <input type="text" className="Search-Input" ref={(input => (this.user = input))} required />
                             <button type="submit" class="button-search"><i class="fas fa-search"></i></button>
                         </div>
                     </form>

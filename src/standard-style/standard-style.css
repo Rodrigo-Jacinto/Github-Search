@@ -1,0 +1,19 @@
+@font-face {
+    font-family:"Monaco";
+    src:url("font/Monaco.ttf");
+  }
+  
+@font-face {
+    font-family:"Raleway";
+    src:url("font/Raleway-ExtraLightItalic.ttf");
+  }
+
+  @font-face {
+    font-family:"Raleway-Light";
+    src:url("font/Raleway-Light.ttf");
+  }
+
+  @font-face {
+    font-family:"Raleway-Regular";
+    src:url("font/Raleway-Regular.ttf");
+  }
