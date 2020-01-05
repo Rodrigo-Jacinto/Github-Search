@@ -19,10 +19,10 @@ export default class Profile extends Component {
                 <div className="col-lg-4 col-md-12 col-sm-12">
 
                     <figure>
-                        <img src={userGit.avatar_url} title="foto do perfil" className="user-avatar mb-3" />
+                        <img src={userGit.avatar_url} alt="avatar" title="foto do perfil" className="user-avatar mb-3" />
                         <figcaption>
                             <span className="user-name">{userGit.name}</span>
-                            <span className="user-login"><a href={userGit.html_url} target="_blank">{userGit.login}</a></span>
+                            <span className="user-login"><a href={userGit.html_url} rel = "noopener noreferrer" target="_blank">{userGit.login}</a></span>
                         </figcaption>
                     </figure>
 
@@ -31,10 +31,10 @@ export default class Profile extends Component {
                     </blockquote>
 
                     <ul className="properties-user mt-2">
-                        <li><img src={emailIcon}  title="email"/>{userGit.email}</li>
-                        <li><img src={followersIcon} title="seguidores" />{userGit.followers}</li>
-                        <li><img src={followingIcon} title="seguindo" />{userGit.following}</li>
-                        <li><img src={repositorieIcon} title="repositórios" />{userGit.public_repos}</li>
+                        <li><img src={emailIcon}  alt="email icon" title="email"/>{userGit.email}</li>
+                        <li><img src={followersIcon} alt="followers icon" title="seguidores" />{userGit.followers}</li>
+                        <li><img src={followingIcon} alt="following icon" title="seguindo" />{userGit.following}</li>
+                        <li><img src={repositorieIcon} alt="repositorie icon" title="repositórios" />{userGit.public_repos}</li>
                     </ul>
 
                 </div>

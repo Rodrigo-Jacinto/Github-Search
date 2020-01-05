@@ -24,7 +24,6 @@ export default class Result extends Component {
             let responseUser = await api.get(`/${user}`);
             let responseRepos = await api.get(`/${user}/repos`);
             this.setState({ userGit: [responseUser.data], repoGit: responseRepos.data });
-            console.log(responseUser);
             this.user.value = user;
         }
         catch (err) {
@@ -87,7 +86,7 @@ export default class Result extends Component {
         return (
             <main className="container m-5">
 
-                <seciton className="row">
+                <section className="row">
                     <div className="col-lg-4 col-md-12 col-sm-12">
                         <Link to="/" className="link-home"> <h1 className="github-search-title github-search-title-result">Github<span className="text-style-1"> Search</span></h1></Link>
                     </div>
@@ -96,12 +95,12 @@ export default class Result extends Component {
                         <form onSubmit={this.search}>
                             <div className="row d-flex justify-content-center">
                                 <input type="text" className="search-input" ref={(input => (this.user = input))} required />
-                                <button type="submit" className="button-search"><img src={searchIcon} /></button>
+                                <button type="submit" className="button-search"><img src={searchIcon} alt="search icon" /></button>
                             </div>
                         </form>
                     </div>
 
-                </seciton>
+                </section>
 
                 {
                     this.loadUser()

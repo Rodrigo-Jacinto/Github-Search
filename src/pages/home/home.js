@@ -25,7 +25,7 @@ export default class Home extends Component {
                     <form onSubmit={this.searchUser}>
                         <div className="row d-flex justify-content-center">
                             <input type="text" className="search-input" ref={(input => (this.user = input))} required />
-                            <button type="submit" className="button-search"><img src={searchIcon} /></button>
+                            <button type="submit" className="button-search"><img src={searchIcon} alt="search icon" /></button>
                         </div>
                     </form>
                 </section>
