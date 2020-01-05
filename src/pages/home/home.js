@@ -21,13 +21,13 @@ export default class Home extends Component {
 
                     <seciton className="row">
                         <div className="col-md-12 col-sm-12 text-center">
-                            <h1 className="Github-Search-Title">Github<span className="text-style-1"> Search</span></h1>
+                            <h1 className="github-search-title">Github<span className="text-style-1"> Search</span></h1>
                         </div>
                     </seciton>
 
                     <form onSubmit={this.searchUser}>
                         <div className="row d-flex justify-content-center">
-                            <input type="text" className="Search-Input" ref={(input => (this.user = input))} required />
+                            <input type="text" className="search-input" ref={(input => (this.user = input))} required />
                             <button type="submit" className="button-search"><img src={searchIcon} /></button>
                         </div>
                     </form>

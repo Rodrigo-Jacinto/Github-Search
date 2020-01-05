@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import api from '../../services/api';
 import Profile from '../../components/profile/profile.js';
-import searchIcon from './img/search-Icon.svg';
+import searchIcon from './img/search-icon.svg';
 import { Link } from 'react-router';
 import "./result-style.css";
 
@@ -11,7 +11,7 @@ export default class Result extends Component {
     state =
         {
             userGit: null,
-            repoGit: []
+            repoGit: null
         }
 
     componentDidMount() {
@@ -89,13 +89,13 @@ export default class Result extends Component {
 
                 <seciton className="row">
                     <div className="col-md-4 col-sm-12">
-                        <Link to="/" className="link-home"> <h1 className="Github-Search-Title Github-Search-Title2">Github<span className="text-style-1"> Search</span></h1></Link>
+                        <Link to="/" className="link-home"> <h1 className="github-search-title github-search-title-result">Github<span className="text-style-1"> Search</span></h1></Link>
                     </div>
 
                     <div className="col-md-8 col-sm-12">
                         <form onSubmit={this.search}>
                             <div className="row d-flex justify-content-center">
-                                <input type="text" className="Search-Input" ref={(input => (this.user = input))} required />
+                                <input type="text" className="search-input" ref={(input => (this.user = input))} required />
                                 <button type="submit" className="button-search"><img src={searchIcon} /></button>
                             </div>
                         </form>

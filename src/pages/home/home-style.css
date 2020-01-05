@@ -1,67 +1,11 @@
-* {
-  box-sizing: border-box;
-}
-
-html,body, #root {
-  height: 100%;
-}
-
-
-
-.Github-Search-Title {
-    font-family: "Monaco";
-    font-size: 60px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000000;
-  }
- 
-
-.Github-Search-Title .text-style-1 {
-    font-family: "Raleway";
-    font-weight: 200;
-    font-style:italic;
-
-  }
-
-.Search-Input {
-    width: 660px;
-    height: 50px;
-    padding-top: 13px;
-    padding-left: 17px;
-    border-radius:0px;
-    font-family: "Raleway-Light";
-    font-size: 20px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #5c5c5c;
-}
-
-  .button-search {
-    width: 100px;
-    height: 50px;
-    border: 1px solid #ac53f2;
-    border-radius: 2px;
-    background-color: #ac53f2;
-  }
-
-  .Search-Icon {
-    width: 30px;
-    height: 30.1px;
-    box-shadow: 0 0 4px black;
-    background-color: #fff;
-  }
-
 
   @media only screen and (max-width: 767px) {
     .Search-Input {
       width: 60% !important;
+    }
+
+    .Github-Search-Title {
+      font-size: 40px;
     }
 
   }

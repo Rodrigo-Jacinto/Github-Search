@@ -2,11 +2,6 @@
 
     font-family: "Raleway-Regular";
     font-size: 35px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #ac53f2;
   }
 
@@ -15,10 +10,6 @@
     font-family:"Raleway-Light";
     font-size: 20px;
     font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #000000;
     display: block;
   }
@@ -28,10 +19,6 @@
     font-family: "Raleway";
     font-size: 20px;
     font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #5c5c5c;
     display: block;
     margin-top: 10px;

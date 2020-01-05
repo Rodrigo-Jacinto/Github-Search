@@ -1,19 +1,66 @@
 @font-face {
-    font-family:"Monaco";
-    src:url("font/Monaco.ttf");
-  }
+  font-family:"Monaco";
+  src:url("font/Monaco.ttf");
+}
   
 @font-face {
-    font-family:"Raleway";
-    src:url("font/Raleway-ExtraLightItalic.ttf");
-  }
+  font-family:"Raleway-Italic";
+  src:url("font/Raleway-ExtraLightItalic.ttf");
+}
 
-  @font-face {
-    font-family:"Raleway-Light";
-    src:url("font/Raleway-Light.ttf");
-  }
+@font-face {
+  font-family:"Raleway-Light";
+  src:url("font/Raleway-Light.ttf");
+}
 
-  @font-face {
-    font-family:"Raleway-Regular";
-    src:url("font/Raleway-Regular.ttf");
-  }
+@font-face {
+  font-family:"Raleway-Regular";
+  src:url("font/Raleway-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,body, #root {
+  height: 100%;
+}
+  
+body {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.github-search-title {
+  font-family: "Monaco";
+  font-size: 60px;
+  color: #000000;
+}
+
+.github-search-title .text-style-1 {
+  font-family: "Raleway-Italic";
+  font-weight: 200;
+}
+
+.search-input {
+  width: 660px;
+  height: 50px;
+  padding-top: 13px;
+  padding-left: 17px;
+  border-radius:0px;
+  font-family: "Raleway-Light";
+  font-size: 20px;
+  font-weight: 300;
+  color: #5c5c5c;
+}
+
+.button-search {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #ac53f2;
+  border-radius: 2px;
+  background-color: #ac53f2;
+}
