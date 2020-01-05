@@ -3,6 +3,7 @@ import Repositories from '../repositories/repositories.js';
 import followersIcon from './img/followers-icon.svg';
 import followingIcon from './img/following.svg';
 import emailIcon from './img/email.svg';
+import repositorieIcon from './img/repositorie-icon.svg';
 
 import "./profile-style.css";
 
@@ -15,10 +16,10 @@ export default class Profile extends Component {
 
         return (
             <section className="row mt-5">
-                <div className="col-md-4 col-sm-12">
+                <div className="col-lg-4 col-md-12 col-sm-12">
 
                     <figure>
-                        <img src={userGit.avatar_url} className="user-avatar mb-3" />
+                        <img src={userGit.avatar_url} title="foto do perfil" className="user-avatar mb-3" />
                         <figcaption>
                             <span className="user-name">{userGit.name}</span>
                             <span className="user-login"><a href={userGit.html_url} target="_blank">{userGit.login}</a></span>
@@ -30,14 +31,15 @@ export default class Profile extends Component {
                     </blockquote>
 
                     <ul className="properties-user mt-2">
-                        <li><img src={emailIcon} />{userGit.email}</li>
-                        <li><img src={followersIcon} />{userGit.followers}</li>
-                        <li><img src={followingIcon} />{userGit.following}</li>
+                        <li><img src={emailIcon}  title="email"/>{userGit.email}</li>
+                        <li><img src={followersIcon} title="seguidores" />{userGit.followers}</li>
+                        <li><img src={followingIcon} title="seguindo" />{userGit.following}</li>
+                        <li><img src={repositorieIcon} title="repositórios" />{userGit.public_repos}</li>
                     </ul>
 
                 </div>
 
-                <div className="col-md-8 col-sm-12">
+                <div className="col-lg-8 col-md-12 col-sm-12">
                     <Repositories repos={repositories} />
                 </div>
 

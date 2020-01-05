@@ -88,11 +88,11 @@ export default class Result extends Component {
             <main className="container m-5">
 
                 <seciton className="row">
-                    <div className="col-md-4 col-sm-12">
+                    <div className="col-lg-4 col-md-12 col-sm-12">
                         <Link to="/" className="link-home"> <h1 className="github-search-title github-search-title-result">Github<span className="text-style-1"> Search</span></h1></Link>
                     </div>
 
-                    <div className="col-md-8 col-sm-12">
+                    <div className="col-lg-8 col-md-12 col-sm-12">
                         <form onSubmit={this.search}>
                             <div className="row d-flex justify-content-center">
                                 <input type="text" className="search-input" ref={(input => (this.user = input))} required />
