@@ -14,16 +14,13 @@ export default class Home extends Component {
     render() {
 
         return (
-
             <main className="container d-flex h-100">
 
-                <div className="row justify-content-center align-self-center">
+                <section className="row justify-content-center align-self-center">
 
-                    <seciton className="row">
-                        <div className="col-md-12 col-sm-12 text-center">
-                            <h1 className="github-search-title">Github<span className="text-style-1"> Search</span></h1>
-                        </div>
-                    </seciton>
+                    <div className="col-md-12 col-sm-12 text-center">
+                        <h1 className="github-search-title">Github<span className="text-style-1"> Search</span></h1>
+                    </div>
 
                     <form onSubmit={this.searchUser}>
                         <div className="row d-flex justify-content-center">
@@ -31,7 +28,7 @@ export default class Home extends Component {
                             <button type="submit" className="button-search"><img src={searchIcon} /></button>
                         </div>
                     </form>
-                </div>
+                </section>
             </main>
 
         );
