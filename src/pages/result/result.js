@@ -93,7 +93,7 @@ export default class Result extends Component {
 
                     <div className="col-lg-8 col-md-12 col-sm-12">
                         <form onSubmit={this.search}>
-                            <div className="row d-flex justify-content-center">
+                            <div className="row d-flex">
                                 <input type="text" className="search-input" ref={(input => (this.user = input))} required />
                                 <button type="submit" className="button-search"><img src={searchIcon} alt="search icon" /></button>
                             </div>
