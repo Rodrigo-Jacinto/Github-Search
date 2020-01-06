@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 import './home-style.css';
-import searchIcon from './img/search-Icon.svg';
+import searchIcon from './img/search-icon.svg';
 
 export default class Home extends Component {
 
