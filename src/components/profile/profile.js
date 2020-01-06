@@ -31,7 +31,7 @@ export default class Profile extends Component {
                     </blockquote>
 
                     <ul className="properties-user mt-2">
-                        <li><img src={emailIcon}  alt="email icon" title="email"/>{userGit.blog}</li>
+                        <li><img src={emailIcon}  alt="email icon" title="email"/>{userGit.email}</li>
                         <li><img src={followersIcon} alt="followers icon" title="seguidores" />{userGit.followers}</li>
                         <li><img src={followingIcon} alt="following icon" title="seguindo" />{userGit.following}</li>
                         <li><img src={repositorieIcon} alt="repositorie icon" title="repositórios" />{userGit.public_repos}</li>
