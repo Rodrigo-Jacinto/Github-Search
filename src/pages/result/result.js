@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import api from '../../services/api';
 import Profile from '../../components/profile/profile.js';
+import Message from '../../components/message/message.js';
 import searchIcon from './img/search-icon.svg';
 import { Link } from 'react-router';
 import "./result-style.css";
+
+
+
 
 
 export default class Result extends Component {
@@ -23,6 +27,7 @@ export default class Result extends Component {
             let { user } = this.props.params;
             let responseUser = await api.get(`/${user}`);
             let responseRepos = await api.get(`/${user}/repos`);
+            console.log(responseRepos);
             this.setState({ userGit: [responseUser.data], repoGit: responseRepos.data });
             this.user.value = user;
         }
@@ -57,13 +62,7 @@ export default class Result extends Component {
         let { repoGit } = this.state;
 
         if (!userGit) {
-            return (
-                <section className="row mt-5">
-                    <div className="col-md-12 text-center">
-                        <h1 className="loading-message">Loading...</h1>
-                    </div>
-                </section>
-            )
+            return <Message optionMessage={1} />
 
         }
         else if (Array.isArray(userGit) && userGit.length > 0) {
@@ -71,13 +70,7 @@ export default class Result extends Component {
             return <Profile user={userGit} repos={repoGit} />
         }
         else {
-            return (
-                <section className="row mt-5">
-                    <div className="col-md-12 text-center">
-                        <h1 className="not-found-message">User not found :(</h1>
-                    </div>
-                </section>
-            )
+            return <Message optionMessage={0} />
         }
     }
 
