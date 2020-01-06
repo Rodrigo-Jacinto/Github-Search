@@ -60,7 +60,7 @@ export default class Result extends Component {
             return (
                 <section className="row mt-5">
                     <div className="col-md-12 text-center">
-                        <h1 className="loading-message">Loanding...</h1>
+                        <h1 className="loading-message">Loading...</h1>
                     </div>
                 </section>
             )
