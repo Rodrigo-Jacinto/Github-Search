@@ -10,7 +10,6 @@ const Repositorie = (props) => {
         return a.stargazers_count > b.stargazers_count ? -1 : a.stargazers_count < b.stargazers_count ? 1 : 0;
     });
 
-    console.log(repositories.length);
     return (
         repositories.map(repos =>
             (
