@@ -6,10 +6,6 @@ import searchIcon from './img/search-icon.svg';
 import { Link } from 'react-router';
 import "./result-style.css";
 
-
-
-
-
 export default class Result extends Component {
 
     state =
@@ -27,8 +23,11 @@ export default class Result extends Component {
             let { user } = this.props.params;
             let responseUser = await api.get(`/${user}`);
             let responseRepos = await api.get(`/${user}/repos`);
-            console.log(responseRepos);
-            this.setState({ userGit: [responseUser.data], repoGit: responseRepos.data });
+            
+             if (responseUser.status === 200) {
+                this.setState({ userGit: [responseUser.data], repoGit: responseRepos.data });
+            }
+           
             this.user.value = user;
         }
         catch (err) {
