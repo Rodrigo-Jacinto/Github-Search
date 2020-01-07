@@ -23,7 +23,7 @@ export default class Result extends Component {
             let { user } = this.props.params;
             let responseUser = await api.get(`/${user}`);
             let responseRepos = await api.get(`/${user}/repos`);
-            
+        
              if (responseUser.status === 200) {
                 this.setState({ userGit: [responseUser.data], repoGit: responseRepos.data });
             }
@@ -43,7 +43,7 @@ export default class Result extends Component {
         try {
             var responseUser = await api.get(`/${this.user.value}`);
             var responseRepos = await api.get(`/${this.user.value}/repos`);
-
+         
             if (responseUser.status === 200) {
                 this.setState({ userGit: [responseUser.data], repoGit: responseRepos.data });
 
